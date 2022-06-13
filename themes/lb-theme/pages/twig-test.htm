@@ -1,0 +1,35 @@
+title = "twig test"
+url = "/twig-test"
+layout = "default"
+is_hidden = 0
+==
+<?php
+    $items = array('a','b','c');
+    $foo = 'bar';
+?>
+
+<p> twig test </p>
+
+<br>
+
+<br>
+
+<img src="{{'dogs.jpg' | media | resize(300, 300)}}">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% set foo = 'bar2' %}
+
+{{foo}}
+
+<br>
+<br>
+<p>1: {{items[0]}}</p>
+<br>
+<p>2: {{items[1]}}</p>
+<br>
+<p>3: {{items[2]}}</p>
